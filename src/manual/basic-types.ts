@@ -59,11 +59,36 @@ let color3: Color3 = Color3.Yellow;
 let colorName: string = Color[2];
 
 // any
+let notSure: any = 4;
+notSure = 'a string';
+notSure = false;
+
+let ugly: any = 4;
+ugly.toFixed(2);
+
+let pretty: Object = 4;
+// pretty.toFixed(1); // error
+
+let list5: any[] = [1, 'string', false];
+list5[1] = 100;
 
 // void
+const warnUser = (): void => {
+    alert('warning...');
+}
 
 // null | undefined
+let nullVar: null = null;
+let undefinedVar: undefined = undefined;
+let a;
 
 // never
 
+const error = (): never => {
+    throw new Error('error');
+}
+
 // type assert
+
+let someValue: any = 'string';
+let strLength: number = (someValue as string).length;

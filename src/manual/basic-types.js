@@ -49,3 +49,28 @@ var Color3;
 })(Color3 || (Color3 = {}));
 let color3 = Color3.Yellow;
 let colorName = Color[2];
+// any
+let notSure = 4;
+notSure = 'a string';
+notSure = false;
+let ugly = 4;
+ugly.toFixed(2);
+let pretty = 4;
+// pretty.toFixed(1); // error
+let list5 = [1, 'string', false];
+list5[1] = 100;
+// void
+const warnUser = () => {
+    alert('warning...');
+};
+// null | undefined
+let nullVar = null;
+let undefinedVar = undefined;
+let a;
+// never
+const error = () => {
+    throw new Error('error');
+};
+// type assert
+let someValue = 'string';
+let strLength = someValue.length;
